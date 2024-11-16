@@ -1,0 +1,90 @@
+/* Estilos do Rodapé */
+
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    padding-top: 50px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ffdd57;
+  }
+  
+  .footer-section p {
+    margin: 5px 0;
+  }
+  
+  .footer-section a {
+    color: #ffdd57;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 200px;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .footer-image h2 {
+    align-items: center;
+    color: #ffdd57;
+    font-family: 'Titillium Web', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+  }
+
+  .footer-image img {
+    max-width: 150px;
+    height: auto;
+  }
+
+  .footer-image img:hover {
+    cursor: pointer;
+  }
+
+  .footer-image a {
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 0.8rem;
+  }  
+
+  iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }

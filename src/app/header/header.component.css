@@ -1,0 +1,87 @@
+/* Header geral */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #000000;
+    color: #fff;
+  }
+   
+  /* Nome */
+  .nome {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nome p {
+    color: #ffdd57;
+    margin: 0;
+    margin-left: 10px;
+    font-family: 'Titillium Web', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    border-color: #ffdd57;
+  }
+  
+  .nome span {
+    font-weight: bold;
+  }
+  
+  .nome:hover {
+    color: #ffdd57;
+    cursor: pointer;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+
+  .nome img {
+    max-height: 50px;
+    cursor: pointer;
+    align-items: right;
+  }
+  
+  /* Links de Navegação */
+  .nav-links {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 2px;
+  }
+  
+  .nav-links a {
+    color: #ffdd57;
+    font-family: 'Titillium Web', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 15px;
+  }
+  
+  .nav-links a:hover {
+    box-shadow: 2px 2px #ffdd57,
+                3px 3px #ffdd57, 
+                3px 3px #ffdd57,
+                4px 4px #ffdd57,
+                2px 2px #ffdd57;
+    transform: translateX(-3px);
+  }
+  
+  /* Redes Sociais */
+  .redes-sociais {
+    display: flex;
+    justify-content: flex-end; /* Alinha os ícones das redes sociais à direita */
+    align-items: center;
+    width: 25%;
+  }
+  
+  .redes-sociais a {
+    color: #ffdd57;
+    margin-left: 20px;
+    font-size: 25px; /* Ajuste o tamanho do ícone */
+  }
+  
+  .redes-sociais a:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  
