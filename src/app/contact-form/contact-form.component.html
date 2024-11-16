@@ -1,44 +1,44 @@
 <!-- contact-form.component.html -->
+<div id="contato">
+  <div class="contact-form-container">
 
-<div class="contact-form-container">
+      <div class="titulo-form">
+        <h2>Contate-nos:</h2>
+        <p>Envie-nos suas dúvidas, sugestões ou reclamações.</p>
+        <p>Ficaremos muito felizes em atendê-lo!</p>
+      </div>
 
-    <div class="titulo-form">
-      <h2>Contate-nos:</h2>
-      <p>Envie-nos suas dúvidas, sugestões ou reclamações.</p>
-      <p>Ficaremos muito felizes em atendê-lo!</p>
+    <div class="form-img">
+      <img src="fundo.avif" alt="Advocacia"/>
     </div>
 
-  <div class="form-img">
-    <img src="fundo.avif" alt="Advocacia"/>
+    <form class="contact-form" (ngSubmit)="onSubmit()">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" [(ngModel)]="name" name="name" required />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" [(ngModel)]="email" name="email" required />
+      <span *ngIf="emailError" style="color: red;">{{ emailError }}</span>
+
+      <label for="subject">Assunto:</label>
+      <input type="text" id="subject" [(ngModel)]="subject" name="subject" required />
+
+      <label for="phone">Número de Celular:</label>
+      <input type="tel" id="phone" [(ngModel)]="phone" name="phone" placeholder="(DD) 9XXXX-XXXX" required />
+      <span *ngIf="phoneError" style="color: red;">{{ phoneError }}</span>
+
+      <label for="message">Mensagem:</label>
+      <textarea id="message" [(ngModel)]="message" name="message" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
   </div>
 
-  <form class="contact-form" (ngSubmit)="onSubmit()">
-    <label for="name">Nome:</label>
-    <input type="text" id="name" [(ngModel)]="name" name="name" required />
-
-    <label for="email">E-mail:</label>
-    <input type="email" id="email" [(ngModel)]="email" name="email" required />
-    <span *ngIf="emailError" style="color: red;">{{ emailError }}</span>
-
-    <label for="subject">Assunto:</label>
-    <input type="text" id="subject" [(ngModel)]="subject" name="subject" required />
-
-    <label for="phone">Número de Celular:</label>
-    <input type="tel" id="phone" [(ngModel)]="phone" name="phone" placeholder="(DD) 9XXXX-XXXX" required />
-    <span *ngIf="phoneError" style="color: red;">{{ phoneError }}</span>
-
-    <label for="message">Mensagem:</label>
-    <textarea id="message" [(ngModel)]="message" name="message" required></textarea>
-
-    <button type="submit">Enviar</button>
-  </form>
-</div>
-
-<div *ngIf="formSubmitted" class="popup-overlay">
-  <div class="popup">
-    <p>Formulário enviado com sucesso! Entraremos em contato em breve.</p>
-    <button (click)="closePopup()">Fechar</button>
+  <div *ngIf="formSubmitted" class="popup-overlay">
+    <div class="popup">
+      <p>Formulário enviado com sucesso! Entraremos em contato em breve.</p>
+      <button (click)="closePopup()">Fechar</button>
+    </div>
   </div>
 </div>
-
   
